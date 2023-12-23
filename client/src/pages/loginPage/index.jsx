@@ -11,7 +11,7 @@ const LoginPage = () => {
   const dispatch = useDispatch();
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://test-beryl-rho-23.vercel.app//auth/login",
+      "https://test-beryl-rho-23.vercel.app/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

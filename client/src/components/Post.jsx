@@ -37,7 +37,7 @@ const Post = ({
   const patchLike = async (e) => {
     e.stopPropagation();
     const response = await fetch(
-      `https://test-beryl-rho-23.vercel.app//posts/${postId}/like`,
+      `https://test-beryl-rho-23.vercel.app/posts/${postId}/like`,
       {
         method: "PATCH",
         headers: {
@@ -84,7 +84,7 @@ const Post = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`https://test-beryl-rho-23.vercel.app//assets/${picturePath}`}
+          src={`https://test-beryl-rho-23.vercel.app/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">

@@ -75,7 +75,7 @@ const EditProfile = () => {
     }
 
     const savedUserResponse = await fetch(
-      `https://test-beryl-rho-23.vercel.app//users/${_id}`,
+      `https://test-beryl-rho-23.vercel.app/users/${_id}`,
       {
         method: "PUT",
         body: formData,

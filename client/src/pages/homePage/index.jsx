@@ -21,7 +21,7 @@ const HomePage = () => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://test-beryl-rho-23.vercel.app//users/${_id}/friends`,
+      `https://test-beryl-rho-23.vercel.app/users/${_id}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

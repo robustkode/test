@@ -13,7 +13,7 @@ const RegisterPage = () => {
 
   const register = async (values, onSubmitProps) => {
     const savedUserResponse = await fetch(
-      "https://test-beryl-rho-23.vercel.app//auth/register",
+      "https://test-beryl-rho-23.vercel.app/auth/register",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

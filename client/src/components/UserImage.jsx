@@ -10,7 +10,7 @@ const UserImage = ({ image, size = "60px" }) => {
         alt="user"
         src={
           image
-            ? `https://test-beryl-rho-23.vercel.app//assets/${image}`
+            ? `https://test-beryl-rho-23.vercel.app/assets/${image}`
             : "../assets/avatar.png"
         }
       />

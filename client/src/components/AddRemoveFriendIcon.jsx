@@ -28,8 +28,8 @@ const AddRemoveFriendIcon = ({ userId, handleBeFriend = null }) => {
     e.stopPropagation();
     const response = await fetch(
       handleBeFriend
-        ? `https://test-beryl-rho-23.vercel.app//users/${userId}/${_id}`
-        : `https://test-beryl-rho-23.vercel.app//users/${_id}/${userId}`,
+        ? `https://test-beryl-rho-23.vercel.app/users/${userId}/${_id}`
+        : `https://test-beryl-rho-23.vercel.app/users/${_id}/${userId}`,
       {
         method: "PATCH",
         headers: {
@@ -42,7 +42,7 @@ const AddRemoveFriendIcon = ({ userId, handleBeFriend = null }) => {
     if (handleBeFriend) {
       handleBeFriend(data);
       const response = await fetch(
-        `https://test-beryl-rho-23.vercel.app//users/${_id}/friends`,
+        `https://test-beryl-rho-23.vercel.app/users/${_id}/friends`,
         {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
