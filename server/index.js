@@ -14,7 +14,7 @@ mongoose.connect(
 app.get("/", (req, res) => {
   res.json("Hello");
 });
-app.post("/posts", (req, res) => {
+app.get("/posts", (req, res) => {
   // const {name, email, password} = req.body;
   // RegisterModel.findOne({email: email})
   // .then(user => {
