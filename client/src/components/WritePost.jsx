@@ -46,11 +46,14 @@ const MyPostWidget = ({ picturePath, handleWrite }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`http://localhost:3001/posts`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${token}` },
-      body: formData,
-    });
+    const response = await fetch(
+      `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/posts`,
+      {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+        body: formData,
+      }
+    );
     const posts = await response.json();
 
     setImage(null);

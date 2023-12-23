@@ -7,10 +7,13 @@ const Posts = forwardRef(
   ({ userId, handleBeFriend = null, editProfile }, ref) => {
     const [posts, setPosts] = useState([]);
     const getPosts = async () => {
-      const response = await fetch("http://localhost:3001/posts", {
-        method: "GET",
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const response = await fetch(
+        "https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/posts",
+        {
+          method: "GET",
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       const data = await response.json();
       setPosts(data);
     };
@@ -24,7 +27,7 @@ const Posts = forwardRef(
 
     const getUserPosts = async () => {
       const response = await fetch(
-        `http://localhost:3001/posts/${userId}/posts`,
+        `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/posts/${userId}/posts`,
         {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },

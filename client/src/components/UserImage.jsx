@@ -10,7 +10,7 @@ const UserImage = ({ image, size = "60px" }) => {
         alt="user"
         src={
           image
-            ? `http://localhost:3001/assets/${image}`
+            ? `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/assets/${image}`
             : "../assets/avatar.png"
         }
       />

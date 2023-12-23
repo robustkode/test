@@ -17,17 +17,20 @@ const ProfilePage = () => {
   const { _id } = useSelector((state) => state.user);
 
   const getUser = async () => {
-    const response = await fetch(`http://localhost:3001/users/${userId}`, {
-      method: "GET",
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const response = await fetch(
+      `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/users/${userId}`,
+      {
+        method: "GET",
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
     const data = await response.json();
     setUserData(data);
   };
 
   const getFriends = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${userId}/friends`,
+      `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
