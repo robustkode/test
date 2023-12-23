@@ -20,7 +20,7 @@ const FriendsPage = () => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/users/${_id}/friends`,
+      `https://test-beryl-rho-23.vercel.app//users/${_id}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

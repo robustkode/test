@@ -18,7 +18,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/users/${userId}`,
+      `https://test-beryl-rho-23.vercel.app//users/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
@@ -30,7 +30,7 @@ const ProfilePage = () => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/users/${userId}/friends`,
+      `https://test-beryl-rho-23.vercel.app//users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

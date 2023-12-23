@@ -8,7 +8,7 @@ const Posts = forwardRef(
     const [posts, setPosts] = useState([]);
     const getPosts = async () => {
       const response = await fetch(
-        "https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/posts",
+        "https://test-beryl-rho-23.vercel.app//posts",
         {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
@@ -27,7 +27,7 @@ const Posts = forwardRef(
 
     const getUserPosts = async () => {
       const response = await fetch(
-        `https://test-2giuzrt8u-khalids-projects-cc2c4e60.vercel.app/posts/${userId}/posts`,
+        `https://test-beryl-rho-23.vercel.app//posts/${userId}/posts`,
         {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
